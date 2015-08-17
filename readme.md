@@ -55,7 +55,7 @@ The application is based on the open Helsinki Linked Events API. The API specifi
 ### As a developer ###
 
 I should be able to get a list of events for a given time span whenever requested.  
-The API returns results as paged so also getting the next and previous page should be supported.  
+The API returns results as paged so also getting the next page should be supported.  
 I'm interested in the start/end dates, event name, event description, event info url, location name, location address (city, street).  
 The following pieces of information must be included in the data obtained from the API:  
 
@@ -105,7 +105,7 @@ I should style the event list to look good.
 
 I should provide all localized textual content primarily in English. If English text is not available then Finnish should be shown.  
 If an event doesn't have an info URL I should instead open Google search in a new tab with the event name as search term.  
-I should slso provide a loading spinner to let the user know what's going on.  
+I should also provide a loading spinner to let the user know what's going on.  
 
 ### Acceptance criteria ###
 
@@ -125,8 +125,8 @@ I should be able to browse both the intro page and the events page with my iPad 
 
 ### Acceptance criteria ###
 
-+ Breakpoints for phone sized displays
-+ The pages must be usable, clear and readable with a mobile phone sized display
++ Breakpoints for different screen sizes
++ The pages must be usable, clear and readable with a tablet and a mobile phone sized display
 
 You should reserve about 30 minutes for this assignment.
 
@@ -165,7 +165,7 @@ You should reserve about 30-60 minutes for this assignment.
 ### As a developer ###
 
 I need to design and describe an architecture that enables me to embed these events and event lists anywhere on my site.  
-I need to 
+I need to:
 
 + currently list events on the events page 
 + will need to list all today's events on one page 
