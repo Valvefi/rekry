@@ -1,0 +1,31 @@
+/**
+ * Clearfix for floats.
+ * Has two modes, if overflow needs to remain allowed,
+ * call with $allow-overflow:true.
+ */
+@mixin clearfix($allow-overflow) {
+	@if($allow-overflow) {
+		&:before,
+		&:after {
+			content: ' ';
+			display: table;
+		}
+
+		&:after {
+			clear: both;
+		}
+	}
+	@else {
+		overflow: hidden;
+	}
+
+}
+
+/**
+ * Breakpoint mixin for convenience.
+ */
+@mixin breakpoint($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}

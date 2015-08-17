@@ -1,0 +1,42 @@
+header {
+	height: $header-height;
+	width: 100%;
+	background: #fff;
+	margin: 0;
+	position: fixed;
+	z-index: 1000;
+}
+
+.header__links {
+	list-style-type: none;
+	padding: 0 0 0 3rem;
+	margin: 0;
+	box-shadow: 0px 2px 5px 0px #B5B5B5;
+
+	@include clearfix(false);
+}
+
+.header__link {
+	margin-right: 2rem;
+	line-height: 6rem;
+	display: block;
+	float: left;
+
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.header__link--separated {
+
+	&:after {
+		margin-left: 2rem;
+		content: '|';
+	}
+
+	&:last-child:after {
+		content: '';
+		margin-left: 0;
+	}
+}

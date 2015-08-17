@@ -1,0 +1,64 @@
+.intro, .intro__mask, .intro__content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.intro {
+	background-image: url(../assets/images/intro-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.intro__mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+}
+
+.intro__content {
+	z-index: 3;
+}
+
+.intro__heading {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 100%;
+	transform: translate3d(-50%, 0, 0);
+}
+
+.intro__bubble {
+	position: absolute;
+	background: rgba(255,255,255,0.9);
+	width: 24rem;
+	height: 24rem;
+	border-radius: 12rem;
+	margin-right: 5rem;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 0px 0px 10px rgba(255,255,255,0.2);
+	}
+}
+
+.intro__bubble--events {
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+
+.intro__main-link {
+	font: {
+		size: 3rem;
+	}
+}
+

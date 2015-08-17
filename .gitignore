@@ -1,0 +1,19 @@
+# sass
+.sass-cache/
+
+# compiled styles
+assets/stylesheets/*
+
+# bower components
+!src/vendor
+src/vendor/*
+
+# build and grunt
+build/
+node_modules/
+
+*.orig
+
+# PHPStorm
+.idea/
+.tmp/
